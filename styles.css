@@ -27,13 +27,29 @@ nav ul {
     padding: 0;
     gap: 1rem;
     justify-self: center;
+    gap: 2rem;
 }
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    background-color: rgb(140, 173, 179);
+    border-radius: 10px;
+    text-decoration: underline black;
+}
+
 
 #prenumenera {
     color: black;
     background-color: red;
     font-size: 1.5rem;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #logga-in {
@@ -41,8 +57,44 @@ nav ul {
     color: black;
     font-size: 1.5rem;
     margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 body {
     margin: 0%;
+}
+
+#nyhet1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    border: 5px solid black;
+    margin-right: 25%;
+    margin-left: 25%;
+    flex-direction: column;
+}
+
+.nyhetram-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nyhetsram-bild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.nyhetram-text h1 {
+    font-size: 4rem;
+}
+
+.nyhetram-text p {
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
 }
