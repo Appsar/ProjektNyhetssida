@@ -10,7 +10,7 @@ nav {
     font-weight: bold;
     font-size: larger;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 5px;
 }
@@ -30,7 +30,7 @@ nav ul {
     gap: 2rem;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     color: black;
     font-size: 2rem;
@@ -97,4 +97,44 @@ body {
 .nyhetram-text p {
     font-size: 1.5rem;
     margin-top: -1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin: 0rem;
+    margin-top: 10rem;
+    background-color: black;
+    color: white;
+    height: 25rem;
+}
+
+footer label {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    align-self: auto;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+
 }
