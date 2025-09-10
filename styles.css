@@ -34,7 +34,8 @@ nav li a {
     text-decoration: none;
     color: black;
     font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
 }
 
 nav li a:hover {
@@ -52,6 +53,10 @@ nav li a:hover {
     padding: 10px;
 }
 
+#prenumenera:hover {
+    background-color: rgb(185, 0, 0)
+}
+
 #logga-in {
     background-color: azure;
     color: black;
@@ -59,7 +64,13 @@ nav li a:hover {
     margin-right: 10px;
     padding: 10px;
     border-radius: 20px;
+    border: 2px solid grey;
 }
+
+#logga-in:hover {
+    background-color: lightgray;
+}
+
 
 body {
     margin: 0%;
@@ -136,6 +147,11 @@ footer ul a {
     color: white;
 }
 
+footer ul a:hover {
+    text-decoration: underline;
+
+}
+
 footer div {
     display: flex;
     flex-direction: column;
@@ -172,25 +188,34 @@ h3 {
     border-radius: 2px;
 }
 
-div button a {
-    font-size: 2rem;
+#scroll ul li {
+    list-style: none;
+    padding: 0;
+    margin-left: -5%;
+}
+
+#scroll ul li a {
     text-decoration: none;
+    font-size: 2rem;
     color: black;
 }
 
-div button {
-    width: fit-content;
-    background: none;
-    border: none;
+#scroll ul li a:hover {
+    text-decoration: underline black;
 }
 
-div button a:hover {
-    background-color: rgb(122, 122, 122);
-    text-decoration: underline solid black;
+#mest-lästa-nyhet ul li {
+    list-style: none;
+    padding: 0;
+    margin-left: -5%;
 }
 
-#mest-lästa-nyhet {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+#mest-lästa-nyhet ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+#mest-lästa-nyhet ul li a:hover {
+    text-decoration: underline black;
 }
