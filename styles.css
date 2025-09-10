@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: powderblue;
+    background-color: rgb(147, 211, 236);
     border-bottom: 3px solid rgb(36, 35, 35);
 }
 
@@ -80,7 +80,7 @@ body {
 .nyhet1 {
     display: flex;
     justify-content: center;
-    margin-top: 85px;
+    margin-top: 5%;
     margin-right: 25%;
     margin-left: 25%;
     flex-direction: column;
@@ -165,8 +165,9 @@ footer div {
     height: 70%;
     width: 23%;
     right: 0;
+    margin-top: 5%;
     position: fixed;
-    border: 1px solid grey;
+    border: 1px solid rgb(207, 206, 204);
     background-color: rgb(255, 255, 255);
     flex-direction: column;
     display: flex;
@@ -219,4 +220,33 @@ h3 {
 
 #mest-lästa-nyhet ul li a:hover {
     text-decoration: underline black;
+}
+
+#reklam-container {
+    display: flex;
+    width: 23%;
+    position: absolute;
+    flex-direction: column;
+    border: 1px solid rgb(207, 206, 204);
+    margin-left: 10px;
+    gap: 2rem;
+    margin-top: 5%;
+
+}
+
+.reklam {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 3px;
+}
+
+#text-reklam h1 {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+#text-reklam p {
+    padding: 10px;
+    font-size: 1.2rem;
 }
