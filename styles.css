@@ -4,6 +4,7 @@ nav {
     align-items: center;
     background-color: rgb(147, 211, 236);
     border-bottom: 3px solid rgb(36, 35, 35);
+    overflow: hidden;
 }
 
 #logga-namn {
@@ -18,6 +19,65 @@ nav {
 #logo-wrapper {
     display: flex;
     align-items: center;
+}
+
+#dropdown {
+    font-size: 2rem;
+    overflow: hidden;
+    margin-right: -12rem;
+    margin-left: -10rem;
+    float: left;
+}
+
+#drop-btn {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    padding: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#drop-btn:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+#dropdown-content {
+    display: none;
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+#dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid black;
+    padding: 5px;
+    float: none;
+    text-align: left;
+}
+
+#dropdown-content input {
+    color: rgb(252, 0, 0);
+    fill: black;
+    background-color: gray;
+    width: fit-content;
+    border: none;
+    padding: 5px;
+}
+
+#dropdown-content a:hover {
+    background-color: rgb(166, 179, 189);
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
 }
 
 nav ul {
@@ -177,6 +237,8 @@ footer div {
 
 #scroll {
     overflow: auto;
+    border-bottom: 12px ridge rgb(255, 0, 0);
+    margin-bottom: -27px;
 }
 
 h2,
@@ -191,9 +253,10 @@ h3 {
 }
 
 #scroll ul li {
-    list-style: none;
+    list-style: disc;
+    font-size: 1.5rem;
     padding: 0;
-    margin-left: -5%;
+    margin-left: 0%;
 }
 
 #scroll ul li a {
@@ -207,9 +270,10 @@ h3 {
 }
 
 #mest-lästa-nyhet ul li {
-    list-style: none;
+    list-style: decimal;
+    font-size: 2rem;
     padding: 0;
-    margin-left: -5%;
+    margin-left: 0;
 }
 
 #mest-lästa-nyhet ul li a {
