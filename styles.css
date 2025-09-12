@@ -2,13 +2,19 @@
     font-family: Roboto;
 }
 
+:root {
+    --border: 1px solid rgb(207, 206, 204);
+    --border-bottom: 10px ridge rgb(255, 16, 16)
+}
+
+
 nav {
     display: grid;
     grid-template-columns: 2fr 4fr 1.3fr 1fr 2fr;
     gap: 1.5rem;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border-bottom: 10px ridge rgb(255, 16, 16);
+    border-bottom: var(--border-bottom);
 }
 
 #logga-namn {
@@ -55,6 +61,14 @@ nav li a:hover {
 #search input {
     width: 100%;
     border-radius: 30px;
+    border: var(--border);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search input::placeholder {
+    color: black;
+    opacity: 65%;
+    padding-left: 2px;
 }
 
 #prenumenera {
@@ -94,7 +108,22 @@ body {
     background-color: rgba(238, 234, 234, 0.308);
 }
 
-.nyhet1 {
+#nyhet-titel {
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
+    height: 3rem;
+    margin: 40px 0 -75px 0;
+    margin-left: 20%;
+    margin-right: 25%;
+    border: var(--border);
+    color: rgb(255, 0, 0);
+    gap: 5px;
+}
+
+.nyhet-container {
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -102,7 +131,8 @@ body {
     margin-left: 20%;
     flex-direction: column;
     background-color: white;
-    border: 1px solid rgb(207, 206, 204);
+    border: var(--border);
+    border-bottom: var(--border-bottom);
 }
 
 .nyhetram-text {
@@ -121,7 +151,6 @@ body {
 
 .nyhetsram-bild {
     display: flex;
-    padding: ;
     justify-content: center;
 }
 
@@ -185,33 +214,31 @@ footer div {
 
 }
 
-
 #sidebar {
     height: 70%;
     width: 20%;
     right: 2%;
-    margin-top: 5%;
+    margin-top: 8.4rem;
     position: absolute;
-    border: 1px solid rgb(207, 206, 204);
+    border: var(--border);
     background-color: rgb(255, 255, 255);
     flex-direction: column;
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
 
 }
 
 #scroll {
     overflow: auto;
-    border-bottom: 12px ridge rgb(255, 0, 0);
+    border-bottom: 5px solid gray;
     margin-bottom: -27px;
 }
 
-h2,
-h3 {
-    font-size: 2rem;
+h2 {
+    font-size: 1.2rem;
     background-color: red;
     color: white;
-    padding: 1rem;
+    padding: 0.3rem;
     width: fit-content;
     margin-left: 10px;
     border-radius: 2px;
