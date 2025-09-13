@@ -1,5 +1,7 @@
 * {
     font-family: Roboto;
+    scrollbar-width: thin;
+    scrollbar-color: gray white;
 }
 
 :root {
@@ -61,9 +63,15 @@ nav li a:hover {
 #search input {
     width: 100%;
     border-radius: 30px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: var(--border);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: url('searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    padding: 15px 0px 15px 40px;
+
+
 }
 
 #search input::placeholder {
@@ -141,6 +149,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 
 }
 
@@ -227,10 +236,13 @@ footer div {
     display: flex;
     gap: 2.5rem;
 
+
 }
 
 #scroll {
     overflow: auto;
+    scrollbar-color: gray white;
+    scrollbar-width: thin;
     border-bottom: 5px solid gray;
     margin-bottom: -27px;
 }
