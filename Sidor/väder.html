@@ -6,10 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Väder</title>
     <link rel="stylesheet" href="väder-styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+<header>
+    <nav>
+        <div id="logo-wrapper">
+            <img name="Logga" width="100rem"
+                src="https://media.istockphoto.com/id/1180200398/sv/vektor/platt-svart-tidning-vektor-ikon.jpg?s=612x612&w=0&k=20&c=fHHEt1Ahz3c0eXza6HnlMDCdEMZ8hC_0RRdOEDJ-SR0=">
+            <label id="logga-namn" for="Logga">Galna Nyheter</label>
+            </img>
+
+        </div>
+        <div>
+            <ul>
+                <li style="display: flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                        viewBox="0 -960 960 960" width="30px" fill="#000000">
+                        <path
+                            d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z" />
+                    </svg>
+                    <a href="/index.html">Start</a>
+                </li>
+                <li><a href="Sidor/väder.html">Väder</a></li>
+                <li><a href="#">Svergie</a></li>
+                <li><a href="#">Världen</a></li>
+                <li><a href="#">Ekonomi</a></li>
+            </ul>
+        </div>
+        <div></div>
+        <div id="search">
+            <input type="text" name="search" placeholder="Sök efter nyheter"></input>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+            <button id="prenumenera" style="display:flex; align-items: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px"
+                    fill="#000000">
+                    <path
+                        d="M160-80q-33 0-56.5-23.5T80-160v-400q0-33 23.5-56.5T160-640h640q33 0 56.5 23.5T880-560v400q0 33-23.5 56.5T800-80H160Zm0-80h640v-400H160v400Zm240-40 240-160-240-160v320ZM160-680v-80h640v80H160Zm120-120v-80h400v80H280ZM160-160v-400 400Z" />
+                </svg>
+                Prenumenera</button>
+            <button id="logga-in" style="display:flex; align-items: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000000">
+                    <path
+                        d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+                </svg>
+                <a>Logga in</a></button>
+        </div>
+    </nav>
+</header>
 
 <body>
-    <div><a href="/index.html">Huvudmeny</a></div>
+
 </body>
 
 </html>

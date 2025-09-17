@@ -1,0 +1,116 @@
+:root {
+    --border: 1px solid rgb(207, 206, 204);
+    --border-bottom: 10px ridge rgb(255, 16, 16)
+}
+
+* {
+    font-family: Roboto;
+    scrollbar-width: thin;
+    scrollbar-color: gray white;
+}
+
+body {
+    margin: 0%;
+    background-color: rgba(238, 234, 234, 0.308);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 4fr 1.3fr 1fr 2fr;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom: var(--border-bottom);
+}
+
+#logga-namn {
+    font-weight: bold;
+    font-size: larger;
+    align-self: center;
+    font-size: 2rem;
+    margin-left: 5px;
+    justify-self: flex-start;
+}
+
+#logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    gap: 2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: var(--border);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: url('/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    padding: 15px 0px 15px 40px;
+
+
+}
+
+#search input::placeholder {
+    color: black;
+    opacity: 65%;
+    padding-left: 2px;
+}
+
+#prenumenera {
+    color: black;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    font-weight: 400;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#prenumenera:hover {
+    background-color: rgb(185, 0, 0)
+}
+
+#logga-in {
+    background-color: azure;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid grey;
+    justify-content: end;
+    font-weight: 400;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logga-in:hover {
+    background-color: lightgray;
+}
